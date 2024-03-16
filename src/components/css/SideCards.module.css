@@ -1,0 +1,36 @@
+.div_container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.card_One_Title {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+  padding: 5px;
+  padding-left: 30px;
+}
+.card_One_Body {
+  background-color: var(--color-light-blue);
+}
+.card_One_Body span {
+  color: var(--color-white);
+  font-size: 15px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.card_Two_Title {
+  background-color: var(--color-dark-green);
+  color: var(--color-white);
+  padding: 5px;
+  padding-left: 30px;
+}
+.card_Two_Body {
+  background-color: var(--color-light-green);
+}
+.card_Two_Body span {
+  color: var(--color-white);
+  font-size: 15px;
+  text-align: left;
+  font-weight: bold;
+}

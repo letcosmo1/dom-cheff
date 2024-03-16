@@ -1,0 +1,12 @@
+.list_container a{
+  text-decoration: none;
+  color: var(--color-black);
+}
+.Toolbar a{
+  text-decoration: none;
+  color: var(--color-white);
+}
+.Toolbar{
+  text-decoration: none;
+  background-color: var(--color-black);
+}

@@ -1,0 +1,32 @@
+.produto {
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+    height: 60px;
+    margin-bottom: 16px;
+}
+.produto_info {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    padding: 0 16px;
+    background-color: var(--color-light-gray);
+    border-radius: 5px;
+}
+@media screen and (max-width: 1050px) {
+    .produto {
+        flex-direction: column;
+        width: 90%;
+        height: 180px;
+    }
+    .produto_info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: calc(100% - 32px);
+        height: 56px;
+        padding: 0 16px;
+        background-color: var(--color-light-gray);
+        border-radius: 5px;
+    }
+}

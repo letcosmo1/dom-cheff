@@ -1,0 +1,33 @@
+.gasto {
+    display: flex;
+    justify-content: space-between;
+    width: 790px;
+    height: 60px;
+    margin-bottom: 16px;
+}
+.gasto_info {
+    display: flex;
+    align-items: center;
+    width: 680px;
+    padding: 0 16px;
+    background-color: var(--color-light-gray);
+    border-radius: 5px;
+}
+@media screen and (max-width: 1050px) {
+    .gasto {
+        flex-direction: column;
+        width: 90%;
+        height: 171px;
+    }
+    .gasto_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: calc(100% - 32px);
+        height: fit-content;
+        padding: 8px 16px;
+        background-color: var(--color-light-gray);
+        border-radius: 5px;
+    }
+}

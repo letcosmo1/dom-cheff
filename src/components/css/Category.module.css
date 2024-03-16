@@ -1,0 +1,32 @@
+.categoria {
+    display: flex;
+    justify-content: space-between;
+    width: 512px;
+    height: 60px;
+    margin-bottom: 16px;
+}
+.categoria_info {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    padding: 0 16px;
+    background-color: var(--color-light-gray);
+    border-radius: 5px;
+}
+@media screen and (max-width: 1050px) {
+    .categoria {
+        flex-direction: column;
+        width: 90%;
+        height: 120px;
+    }
+    .categoria_info {
+        display: flex; 
+        justify-content: space-around;
+        align-items: center;
+        width: calc(100% - 32px);
+        height: 56px;
+        padding: 0 16px;
+        background-color: var(--color-light-gray);
+        border-radius: 5px;
+    }
+}

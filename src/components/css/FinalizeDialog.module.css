@@ -1,0 +1,26 @@
+.preco_container {
+    width: fit-content;
+    background-color: var(--color-gray);
+    padding: 4px 16px;
+    margin-bottom: 16px;
+    border-radius: 24px;
+}
+.form_container {
+    display: flex;
+    flex-direction: column;
+}
+.hide_desconto_container {
+    display: none;
+}
+.acrescimo_container {
+    display: flex;
+    width: 100%;
+}
+.hide_acrescimo_container {
+    display: none;
+}
+@media screen and (max-width: 1050px) {
+    .acrescimo_container {
+        flex-direction: column;
+    }
+}

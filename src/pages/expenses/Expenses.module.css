@@ -1,0 +1,92 @@
+.expenses_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title_container {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 60px;
+}
+.main_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    padding: 50px 0 0 0;
+    background-color: var(--color-white);
+    box-shadow: 1px 2px 4px var(--color-light-gray), -1px -1px 4px var(--color-light-gray);
+    border-radius: 5px;
+}
+.day_week_form {
+    display: flex;
+    width: 900px;
+    padding-bottom: 32px;
+}
+.gastos_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+    padding-top: 16px;
+    margin-bottom: 32px;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 5px;
+}
+.month_form {
+    display: flex;
+    width: 790px;
+    margin-bottom: 16px;
+}
+.hide_select {
+    display: none;
+}
+.total_container {
+    display: flex;
+    justify-content: right;
+    width: 900px;
+    margin-bottom: 50px;
+}
+.hide_total_container {
+    display: none;
+}
+@media screen and (max-width: 1050px) {
+    .title_container {
+        width: 90%;
+    }
+    .main_box {
+        width: 90%;
+        padding: 0;
+        background-color: var(--color-white);
+        box-shadow: none;
+    }
+    .day_week_form {
+        width: 100%;
+        padding-bottom: 16px;
+    }
+    .gastos_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 32px);
+        padding: 16px;
+        border: 1px solid var(--color-light-gray);
+        border-radius: 5px;
+        margin-bottom: 0;
+    }
+    .month_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .month_form div {
+        width: 100%;
+    }
+    .total_container {
+        width: 100%;
+        margin: 16px 0;
+    }
+}

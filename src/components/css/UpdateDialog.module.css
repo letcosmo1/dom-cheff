@@ -1,0 +1,11 @@
+.preco_container {
+    width: fit-content;
+    background-color: var(--color-gray);
+    padding: 4px 16px;
+    margin-bottom: 16px;
+    border-radius: 24px;
+}
+.form_container {
+    display: flex;
+    flex-direction: column;
+}
