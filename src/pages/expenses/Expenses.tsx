@@ -12,7 +12,7 @@ import { Gasto, GastoDia, GastoMes, GastoSemana, LucroMes } from "../../utils/Ty
 import MenuItem from "@mui/material/MenuItem";
 import { deleteDoc, doc, getDoc, getDocs, query, updateDoc, where } from "firebase/firestore";
 import { gastos_dia_ref, gastos_mes_ref, gastos_ref, gastos_semana_ref, lucros_dia_ref, lucros_mes_ref, lucros_semana_ref } from "../../utils/Collections";
-import { db } from "../../services/Firebase";
+import { db } from "../../services/firebase";
 
 type PropTypes = {
     gastosMes: GastoMes[];

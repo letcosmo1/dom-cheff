@@ -1,27 +1,40 @@
-# React + TypeScript
+# DOM CHEFF
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto Interdisciplinar do II período do curso Ánalise e Desenvolvimento de Sistemas.
 
-Currently, two official plugins are available:
+Website desenvolvido para o Dom Cheff, loja especializada na venda de hambúrguers, a fim de automatizar o controle de caixa.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Preview
+Credenciais para login
 
-## Expanding the ESLint configuration
+E-mail: admin@gmail.com
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Senha: admin123
 
-- Configure the top-level `parserOptions` property like this:
+Site para preview: -
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Funcionalidades
+* Inserir novos produtos
+* Inserir novas categorias de produtos
+* Adicionar pedidos
+* Adicionar despesas
+* Listar pedidos
+* Listar despesas
+* Calcular lucros
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Colaboradores
+Letícia Cosmo - Desenvolvimento full-stack
+
+Kledson Vinícius - Desenvolvimento do back-end
+
+## Tecnologias usadas
+
+### Front-end
+* Vite
+* React
+* TypeScript
+* MUI
+* CSS
+
+### Back-end
+* Firebase
