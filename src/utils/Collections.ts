@@ -1,5 +1,5 @@
 import { collection } from "firebase/firestore";
-import { db } from "../services/firebase";
+import { db } from "../services/Firebase";
 
 export const categorias_ref = collection(db, 'categorias');
 export const produtos_ref = collection(db, 'produtos');

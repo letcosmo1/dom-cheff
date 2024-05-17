@@ -10,13 +10,13 @@ import { AddOrderPageProduct } from "../../components/AddOrderPageProduct";
 import CheckRoundedIcon from '@mui/icons-material/CheckRounded';
 import { useState } from "react";
 import { FinalizeDialog } from "../../components/FinalizeDialog";
-import { Categoria, LucroDia, LucroMes, Produto, ProdutoQuantidade, VendaDia, VendaMes } from "../../utils/types";
+import { Categoria, LucroDia, LucroMes, Produto, ProdutoQuantidade, VendaDia, VendaMes } from "../../utils/Types";
 import MenuItem from "@mui/material/MenuItem";
-import { toastMsg } from "../../utils/toastMsg";
+import { toastMsg } from "../../utils/Toasts";
 import { getDate, getMonth, getMonthWeek, getTime, getWeek } from "../../utils/DateFormat";
 import { addDoc, doc, getDocs, query, updateDoc, where } from "firebase/firestore";
 import { lucros_dia_ref, lucros_mes_ref, lucros_semana_ref, pedidos_ref, vendas_dia_ref, vendas_mes_ref, vendas_semana_ref } from "../../utils/Collections";
-import { db } from "../../services/firebase";
+import { db } from "../../services/Firebase";
 
 type PropTypes = {
     categorias: Categoria[];

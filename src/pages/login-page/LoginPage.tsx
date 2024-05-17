@@ -1,21 +1,14 @@
-import Container from "@mui/material/Container";
-
-// Styles
 import styles from "./LoginPage.module.css";
-
-// Icons / Imgs
+import Container from "@mui/material/Container";
 import img from "../../assets/Hamburguer.png";
 import logo from "../../assets/Logo.png";
 import { SubmitHandler } from "react-hook-form";
-
-// Services
 import { UserForm } from "../../components/UserForm.tsx";
-import { toastLoginSuccess, toastMsgError } from "../../utils/toastMsg.ts";
+import { toastLoginSuccess, toastMsgError } from "../../utils/Toasts.ts";
 import { useState } from "react";
-import { errorMessages } from "../../utils/errosMessages.ts";
+import { errorMessages } from "../../utils/ErrorMessages.ts";
 import { loginWithEmail } from "../../services/auth.ts";
 
-// Interface
 type formData = {
   email: string;
   password: string;

@@ -8,12 +8,12 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import CheckRoundedIcon from '@mui/icons-material/CheckRounded';
 import { useState } from "react";
-import { GastoDia, GastoMes, LucroDia, LucroMes } from "../../utils/types";
-import { toastMsg, toastMsgSuccess } from "../../utils/toastMsg";
+import { GastoDia, GastoMes, LucroDia, LucroMes } from "../../utils/Types";
+import { toastMsg, toastMsgSuccess } from "../../utils/Toasts";
 import { getDate, getMonth, getMonthWeek, getTime, getWeek } from "../../utils/DateFormat";
 import { addDoc, doc, getDocs, query, updateDoc, where } from "firebase/firestore";
 import { gastos_dia_ref, gastos_mes_ref, gastos_ref, gastos_semana_ref, lucros_dia_ref, lucros_mes_ref, lucros_semana_ref } from "../../utils/Collections";
-import { db } from "../../services/firebase";
+import { db } from "../../services/Firebase";
 
 type PropTypes = {
   gastosMes: GastoMes[];

@@ -7,14 +7,14 @@ import Select, { SelectChangeEvent } from "@mui/material/Select";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import { Categoria, Produto } from "../../utils/types";
+import { Categoria, Produto } from "../../utils/Types";
 import MenuItem from "@mui/material/MenuItem";
 import InputAdornment from "@mui/material/InputAdornment";
 import { ProductsPageProduct } from "../../components/ProductsPageProduct";
-import { toastMsg, toastMsgSuccess } from "../../utils/toastMsg";
+import { toastMsg, toastMsgSuccess } from "../../utils/Toasts";
 import { produtos_ref } from "../../utils/Collections";
 import { addDoc, deleteDoc, doc, getDocs, query, updateDoc, where } from "firebase/firestore";
-import { db } from "../../services/firebase";
+import { db } from "../../services/Firebase";
 
 type PropTypes = {
     categorias: Categoria[];

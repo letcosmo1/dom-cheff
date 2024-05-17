@@ -14,7 +14,7 @@ import {
   VendaDia,
   VendaMes,
   VendaSemana,
-} from "../../utils/types";
+} from "../../utils/Types";
 import MenuItem from "@mui/material/MenuItem";
 import { Order } from "../../components/Order";
 import { getDocs, query, where } from "firebase/firestore";

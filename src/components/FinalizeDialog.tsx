@@ -9,9 +9,9 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import React, { useState } from "react";
-import { Acrescimo, ProdutoQuantidade } from "../utils/types";
+import { Acrescimo, ProdutoQuantidade } from "../utils/Types";
 import InputAdornment from "@mui/material/InputAdornment";
-import { toastMsgSuccess } from "../utils/toastMsg";
+import { toastMsgSuccess } from "../utils/Toasts";
 
 type PropTypes = {
     openDialog: boolean;

@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { useState, useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth";
-import { Auth } from "./services/firebase";
+import { auth } from "./services/firebase";
 import "react-toastify/ReactToastify.min.css";
 import "./App.css";
 import { LoginPage } from "./pages/login-page/LoginPage";
@@ -12,7 +12,7 @@ import { RegisterExpense } from "./pages/register-expense/RegisterExpense";
 import { Navbar } from "./components/Navbar";
 import { ThemeProvider, createTheme } from "@mui/material";
 import { AddOrder } from "./pages/add-order/AddOrder";
-import { Categoria, GastoDia, GastoMes, LucroDia, LucroMes, Produto, VendaDia, VendaMes } from "./utils/types";
+import { Categoria, GastoDia, GastoMes, LucroDia, LucroMes, Produto, VendaDia, VendaMes } from "./utils/Types";
 import { Products } from "./pages/products/Products";
 import { Expenses } from "./pages/expenses/Expenses";
 import { Categories } from "./pages/categories/Categories";
@@ -135,7 +135,7 @@ export function App() {
   const [isLogged, setIsLogged] = useState<boolean | null>(null);
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(Auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setIsLogged(true);
       } else {

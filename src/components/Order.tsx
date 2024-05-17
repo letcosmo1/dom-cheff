@@ -4,7 +4,7 @@ import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
 import { OrderProduct } from "./OrderProduct";
-import { ProdutoQuantidade } from "../utils/types";
+import { ProdutoQuantidade } from "../utils/Types";
 
 type PropTypes = {
     date: string;

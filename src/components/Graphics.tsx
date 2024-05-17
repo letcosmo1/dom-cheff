@@ -11,6 +11,7 @@ import {
 import { Bar } from "react-chartjs-2";
 import { dateTranslate } from "../utils/dateTranslate";
 
+
 export const Graphics = () => {
   ChartJS.register(
     CategoryScale,
@@ -69,6 +70,6 @@ export const Graphics = () => {
   };
 
   return (
-      <Bar data={data} options={options} data-testid="chart-container"/>
+      <Bar data={data} data-testid="chart-container"/>
   );
 };

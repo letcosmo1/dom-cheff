@@ -3,11 +3,11 @@ import { LoadingButton } from "@mui/lab";
 import { Box, Container, TextField } from "@mui/material";
 import { useEffect, useState } from "react";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { Auth, database } from "../../services/firebase";
+import { Auth, database } from "../../services/Firebase";
 import { child, get, ref } from "firebase/database";
 
 // Types
-import { cpfUser, emailUser, imageUser, nameUser } from "../../utils/types";
+import { cpfUser, emailUser, imageUser, nameUser } from "../../utils/Types";
 
 export const Profile = () => {
   const [name, setName] = useState<nameUser>("");

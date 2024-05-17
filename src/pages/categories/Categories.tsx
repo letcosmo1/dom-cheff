@@ -3,13 +3,13 @@ import styles from "./Categories.module.css";
 import AddRoundedIcon from '@mui/icons-material/AddRounded';
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import { toastMsg } from "../../utils/toastMsg";
+import { toastMsg } from "../../utils/Toasts";
 import { Category } from "../../components/Category";
-import { Categoria } from "../../utils/types";
+import { Categoria } from "../../utils/Types";
 import { useState } from "react";
 import { addDoc, deleteDoc, doc, getDocs, query, where } from "firebase/firestore";
 import { categorias_ref, produtos_ref } from "../../utils/Collections";
-import { db } from "../../services/firebase";
+import { db } from "../../services/Firebase";
 
 type PropTypes = {
     getCategorias: () => void;

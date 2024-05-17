@@ -1,6 +1,6 @@
 import styles from "./Dashboard.module.css";
 import { Cards } from "../../components/Cards";
-import { GastoDia, GastoMes, LucroDia, LucroMes, VendaDia, VendaMes } from "../../utils/types";
+import { GastoDia, GastoMes, LucroDia, LucroMes, VendaDia, VendaMes } from "../../utils/Types";
 
 type PropTypes = {
   lucrosMes: LucroMes[];
