@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
-import { Auth, database } from "../services/firebase";
-import { ref, child, get } from "firebase/database";
+import { useState } from "react";
+import { Auth } from "../services/firebase";
 import { NavLink } from "react-router-dom";
 import styles from "./css/Navbar.module.css";
 import Button from "@mui/material/Button/Button";
@@ -18,7 +17,6 @@ import { toastLogoutMgs } from "../utils/toastMsg";
 import ListItemText from "@mui/material/ListItemText";
 
 export const Navbar = () => {
-  const [, setName] = useState<string>();
   const [open, setOpen] = useState(false);
 
   const onSign = () => {
@@ -28,21 +26,6 @@ export const Navbar = () => {
   const toggleDrawer = (isOpen: boolean) => () => {
     setOpen(isOpen);
   };
-
-  useEffect(() => {
-    const user = Auth.currentUser;
-    const dbRef = ref(database);
-    get(child(dbRef, `users/${user?.uid}`))
-      .then((snapshot) => {
-        if (snapshot.exists()) {
-          setName(snapshot.val());
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
-
   return (
     <nav>
       <div className={styles.responsive_container}>

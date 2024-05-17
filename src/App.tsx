@@ -20,7 +20,7 @@ import { Orders } from "./pages/orders/Orders";
 import { Profit } from "./pages/profit/Profit";
 import { getDocs, orderBy, query, where } from "firebase/firestore";
 import { categorias_ref, gastos_dia_ref, gastos_mes_ref, lucros_dia_ref, lucros_mes_ref, produtos_ref, vendas_dia_ref, vendas_mes_ref } from "./utils/Collections";
-import { getDate, getMonth } from "./utils/DateFormat";
+import { getDate } from "./utils/DateFormat";
 
 const theme = createTheme({
   palette: {
@@ -155,7 +155,6 @@ export function App() {
     getVendaDia();
     getLucroDia();
     getGastoDia();
-    console.log(getMonth());
   }, []);
 
   if (isLogged === null) return <LoadingScreen />;
