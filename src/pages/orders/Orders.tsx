@@ -1,4 +1,4 @@
-import styles from "./orders.module.css";
+import styles from "./Orders.module.css";
 import Typography from "@mui/material/Typography";
 import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
@@ -167,7 +167,7 @@ export const Orders = ({ vendasMes }: PropTypes) => {
             <FormControlLabel
               value="Semana"
               control={<Radio />}
-              label="Semana"
+              label="Semana" 
             />
             <FormControlLabel value="Mes" control={<Radio />} label="Mês" />
           </RadioGroup>

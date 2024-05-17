@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { auth } from "../services/Firebase";
+import { auth } from "../services/firebase";
 import { NavLink } from "react-router-dom";
 import styles from "./css/Navbar.module.css";
 import Button from "@mui/material/Button/Button";

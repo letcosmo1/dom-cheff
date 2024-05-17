@@ -1,6 +1,5 @@
 import styles from "./css/Order.module.css";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
 import { OrderProduct } from "./OrderProduct";
@@ -20,8 +19,6 @@ type PropTypes = {
 
 export const Order = ({ date, time, total, desconto, acrescimo, produtos }: PropTypes) => {
     const icon_style = { color: "#757575" };
-    const divider_style = { backgroundColor: "#9e9e9e" };
-    const active_divider_style = { backgroundColor: "#0013BA", height: 1.1 };
 
     const [pedidoView, setPedidoView] = useState<boolean>(false);
 
@@ -50,25 +47,27 @@ export const Order = ({ date, time, total, desconto, acrescimo, produtos }: Prop
                 </Typography>
                 <ArrowDropDownIcon sx={ icon_style } />
             </div>
-            <Divider sx={ pedidoView ? active_divider_style : divider_style } />
-            <div className={ pedidoView ? styles.pedido_info : styles.hide_pedido_info } >
-                {produtos.map((produto) => { 
-                    return <OrderProduct 
-                                key={ produto.nome } 
-                                categoria={ produto.categoria } 
-                                nome={ produto.nome }
-                                preco={ produto.preco }
-                                quantidade={ produto.quantidade }
-                            /> })}
-                <Typography variant="body2" component="p">
-                    Desconto: { desconto.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) }
-                </Typography>
-                <Typography variant="body2" component="p">
-                    Acréscimo: { acrescimo.preco.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) }
-                </Typography>
-                <Typography variant="body2" component="p">
-                    Descrição do acréscimo: { acrescimo.descricao.toLocaleLowerCase() }
-                </Typography>
+            <hr className={ [styles.divider, pedidoView ? styles.divider_active : " "].join(" ") } />
+            <div className={ [styles.pedido_info, pedidoView ? " ": styles.hide_pedido_info].join(" ") } >
+                <div>
+                    {produtos.map((produto) => { 
+                        return <OrderProduct 
+                                    key={ produto.nome } 
+                                    categoria={ produto.categoria } 
+                                    nome={ produto.nome }
+                                    preco={ produto.preco }
+                                    quantidade={ produto.quantidade }
+                                /> })}
+                    <Typography variant="body2" component="p">
+                        Desconto: { desconto.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) }
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        Acréscimo: { acrescimo.preco.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) }
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        Descrição do acréscimo: { acrescimo.descricao.toLocaleLowerCase() }
+                    </Typography>
+                </div>
             </div>
         </div>
     )
