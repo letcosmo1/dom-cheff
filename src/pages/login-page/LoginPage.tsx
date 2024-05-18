@@ -7,7 +7,7 @@ import { UserForm } from "../../components/UserForm.tsx";
 import { toastLoginSuccess, toastMsgError } from "../../utils/Toasts.ts";
 import { useState } from "react";
 import { errorMessages } from "../../utils/ErrorMessages.ts";
-import { loginWithEmail } from "../../services/Auth.ts";
+import { loginWithEmail } from "../../services/Authsss.ts";
 
 type formData = {
   email: string;
@@ -25,7 +25,7 @@ export const LoginPage = () => {
         toastLoginSuccess();
         setIsLoading(false);
       })
-      .catch((error) => {
+      .catch((error: any) => {
         let msg = errorMessages(error.code);
         toastMsgError(msg);
         setIsLoading(false);
