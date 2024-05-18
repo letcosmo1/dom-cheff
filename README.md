@@ -2,7 +2,9 @@
 
 Projeto Interdisciplinar do II período do curso Ánalise e Desenvolvimento de Sistemas.
 
-Website desenvolvido para o Dom Cheff, loja especializada na venda de hambúrguers, a fim de automatizar o controle de caixa.
+Website desenvolvido para o Dom Cheff, lanchonete especializada na venda de hambúrguers, tendo como objetivo a automação do controle de caixa.
+
+Sistema com 100% de responsividade para dispositivos móveis.
 
 ## Preview
 Credenciais para login
