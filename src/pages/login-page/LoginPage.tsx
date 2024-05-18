@@ -7,7 +7,7 @@ import { UserForm } from "../../components/UserForm.tsx";
 import { toastLoginSuccess, toastMsgError } from "../../utils/Toasts.ts";
 import { useState } from "react";
 import { errorMessages } from "../../utils/ErrorMessages.ts";
-import { loginWithEmail } from "../../services/Auth";
+import { loginWithEmail } from "../../services/Auth.ts";
 
 type formData = {
   email: string;
