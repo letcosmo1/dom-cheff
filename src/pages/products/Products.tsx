@@ -14,7 +14,7 @@ import { ProductsPageProduct } from "../../components/ProductsPageProduct";
 import { toastMsg, toastMsgSuccess } from "../../utils/Toasts";
 import { produtos_ref } from "../../utils/Collections";
 import { addDoc, deleteDoc, doc, getDocs, query, updateDoc, where } from "firebase/firestore";
-import { db } from "../../services/Firebasess";
+import { db } from "../../services/Firebase";
 
 type PropTypes = {
     categorias: Categoria[];

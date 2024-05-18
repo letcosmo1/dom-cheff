@@ -13,7 +13,7 @@ import { toastMsg, toastMsgSuccess } from "../../utils/Toasts";
 import { getDate, getMonth, getMonthWeek, getTime, getWeek } from "../../utils/DateFormat";
 import { addDoc, doc, getDocs, query, updateDoc, where } from "firebase/firestore";
 import { gastos_dia_ref, gastos_mes_ref, gastos_ref, gastos_semana_ref, lucros_dia_ref, lucros_mes_ref, lucros_semana_ref } from "../../utils/Collections";
-import { db } from "../../services/Firebasess";
+import { db } from "../../services/Firebase";
 
 type PropTypes = {
   gastosMes: GastoMes[];

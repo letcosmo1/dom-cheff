@@ -9,7 +9,7 @@ import { Categoria } from "../../utils/Typesss";
 import { useState } from "react";
 import { addDoc, deleteDoc, doc, getDocs, query, where } from "firebase/firestore";
 import { categorias_ref, produtos_ref } from "../../utils/Collections";
-import { db } from "../../services/Firebasess";
+import { db } from "../../services/Firebase";
 
 type PropTypes = {
     getCategorias: () => void;
