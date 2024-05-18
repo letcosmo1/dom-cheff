@@ -11,7 +11,7 @@ E-mail: admin@gmail.com
 
 Senha: admin123
 
-Site para preview: -
+Site para preview: - https://dom-cheff.vercel.app/
 
 ## Funcionalidades
 * Inserir novos produtos
