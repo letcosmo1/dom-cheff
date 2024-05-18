@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import { useState, useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "./services/Firebase";
+import { auth } from "./services/Firebasess";
 import "react-toastify/ReactToastify.min.css";
 import "./App.css";
 import { LoginPage } from "./pages/login-page/LoginPage";

@@ -16,7 +16,7 @@ import { toastMsg } from "../../utils/Toasts";
 import { getDate, getMonth, getMonthWeek, getTime, getWeek } from "../../utils/DateFormat";
 import { addDoc, doc, getDocs, query, updateDoc, where } from "firebase/firestore";
 import { lucros_dia_ref, lucros_mes_ref, lucros_semana_ref, pedidos_ref, vendas_dia_ref, vendas_mes_ref, vendas_semana_ref } from "../../utils/Collections";
-import { db } from "../../services/Firebase";
+import { db } from "../../services/Firebasess";
 
 type PropTypes = {
     categorias: Categoria[];
