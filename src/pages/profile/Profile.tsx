@@ -3,19 +3,17 @@ import { LoadingButton } from "@mui/lab";
 import { Box, Container, TextField } from "@mui/material";
 import { useEffect, useState } from "react";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
-import { Auth, database } from "../../services/Firebase";
-import { child, get, ref } from "firebase/database";
 
 // Types
 import { cpfUser, emailUser, imageUser, nameUser } from "../../utils/Types";
 
 export const Profile = () => {
-  const [name, setName] = useState<nameUser>("");
+  const [name] = useState<nameUser>("");
   const [email, setEmail] = useState<emailUser>("");
   const [cpf] = useState<cpfUser>();
   const [image, setImage] = useState<imageUser>("");
 
-  useEffect(() => {
+  useEffect(() => { 
     const auth = getAuth();
     onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -23,17 +21,6 @@ export const Profile = () => {
         setEmail(email!);
       }
     });
-    const user = Auth.currentUser;
-    const dbRef = ref(database);
-    get(child(dbRef, `users/${user?.uid}`))
-      .then((snapshot) => {
-        if (snapshot.exists()) {
-          setName(snapshot.val());
-        }
-      })
-      .catch((error) => {
-        console.error(error);
-      });
   }, [name, email, cpf]);
 
   // Style
