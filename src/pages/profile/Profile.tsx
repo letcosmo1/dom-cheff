@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 // Types
-import { cpfUser, emailUser, imageUser, nameUser } from "../../utils/Types";
+import { cpfUser, emailUser, imageUser, nameUser } from "../../utils/Typesss";
 
 export const Profile = () => {
   const [name] = useState<nameUser>("");

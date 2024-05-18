@@ -8,7 +8,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Radio from "@mui/material/Radio";
 import { useState } from "react";
 import MenuItem from "@mui/material/MenuItem";
-import { LucroDia, LucroMes, LucroSemana, VendaMes, GastoMes } from "../../utils/Types";
+import { LucroDia, LucroMes, LucroSemana, VendaMes, GastoMes } from "../../utils/Typesss";
 import { getDocs, query, where } from "firebase/firestore";
 import { gastos_dia_ref, gastos_semana_ref, lucros_dia_ref, lucros_semana_ref, vendas_dia_ref, vendas_semana_ref } from "../../utils/Collections";
 

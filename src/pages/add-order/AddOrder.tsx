@@ -10,7 +10,7 @@ import { AddOrderPageProduct } from "../../components/AddOrderPageProduct";
 import CheckRoundedIcon from '@mui/icons-material/CheckRounded';
 import { useState } from "react";
 import { FinalizeDialog } from "../../components/FinalizeDialog";
-import { Categoria, LucroDia, LucroMes, Produto, ProdutoQuantidade, VendaDia, VendaMes } from "../../utils/Types";
+import { Categoria, LucroDia, LucroMes, Produto, ProdutoQuantidade, VendaDia, VendaMes } from "../../utils/Typesss";
 import MenuItem from "@mui/material/MenuItem";
 import { toastMsg } from "../../utils/Toasts";
 import { getDate, getMonth, getMonthWeek, getTime, getWeek } from "../../utils/DateFormat";

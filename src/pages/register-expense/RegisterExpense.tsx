@@ -8,7 +8,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import CheckRoundedIcon from '@mui/icons-material/CheckRounded';
 import { useState } from "react";
-import { GastoDia, GastoMes, LucroDia, LucroMes } from "../../utils/Types";
+import { GastoDia, GastoMes, LucroDia, LucroMes } from "../../utils/Typesss";
 import { toastMsg, toastMsgSuccess } from "../../utils/Toasts";
 import { getDate, getMonth, getMonthWeek, getTime, getWeek } from "../../utils/DateFormat";
 import { addDoc, doc, getDocs, query, updateDoc, where } from "firebase/firestore";

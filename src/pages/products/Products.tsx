@@ -7,7 +7,7 @@ import Select, { SelectChangeEvent } from "@mui/material/Select";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import { Categoria, Produto } from "../../utils/Types";
+import { Categoria, Produto } from "../../utils/Typesss";
 import MenuItem from "@mui/material/MenuItem";
 import InputAdornment from "@mui/material/InputAdornment";
 import { ProductsPageProduct } from "../../components/ProductsPageProduct";

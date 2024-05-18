@@ -3,7 +3,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
 import { OrderProduct } from "./OrderProduct";
-import { ProdutoQuantidade } from "../utils/Types";
+import { ProdutoQuantidade } from "../utils/Typesss";
 
 type PropTypes = {
     date: string;

@@ -6,7 +6,7 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import QueryStatsIcon from "@mui/icons-material/QueryStats";
 import TrendingDownIcon from "@mui/icons-material/TrendingDown";
 import styles from "./css/Cards.module.css"; 
-import { GastoDia, GastoMes, LucroDia, LucroMes, VendaDia, VendaMes } from "../utils/Types";
+import { GastoDia, GastoMes, LucroDia, LucroMes, VendaDia, VendaMes } from "../utils/Typesss";
 import { getDate, getMonth } from "../utils/DateFormat";
 
 type PropTypes = {

@@ -8,7 +8,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Radio from "@mui/material/Radio";
 import { Expense } from "../../components/Expense";
 import { useState } from "react";
-import { Gasto, GastoDia, GastoMes, GastoSemana, LucroMes } from "../../utils/Types";
+import { Gasto, GastoDia, GastoMes, GastoSemana, LucroMes } from "../../utils/Typesss";
 import MenuItem from "@mui/material/MenuItem";
 import { deleteDoc, doc, getDoc, getDocs, query, updateDoc, where } from "firebase/firestore";
 import { gastos_dia_ref, gastos_mes_ref, gastos_ref, gastos_semana_ref, lucros_dia_ref, lucros_mes_ref, lucros_semana_ref } from "../../utils/Collections";

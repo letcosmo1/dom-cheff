@@ -5,7 +5,7 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import { toastMsg } from "../../utils/Toasts";
 import { Category } from "../../components/Category";
-import { Categoria } from "../../utils/Types";
+import { Categoria } from "../../utils/Typesss";
 import { useState } from "react";
 import { addDoc, deleteDoc, doc, getDocs, query, where } from "firebase/firestore";
 import { categorias_ref, produtos_ref } from "../../utils/Collections";

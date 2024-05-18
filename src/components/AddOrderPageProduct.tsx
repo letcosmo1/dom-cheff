@@ -3,7 +3,7 @@ import styles from "./css/Product.module.css";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import DeleteIcon from '@mui/icons-material/Delete';
-import { ProdutoQuantidade } from "../utils/Types";
+import { ProdutoQuantidade } from "../utils/Typesss";
 import { useState } from "react";
 
 type PropTypes = {

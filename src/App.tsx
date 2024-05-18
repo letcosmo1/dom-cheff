@@ -12,7 +12,7 @@ import { RegisterExpense } from "./pages/register-expense/RegisterExpense";
 import { Navbar } from "./components/Navbar";
 import { ThemeProvider, createTheme } from "@mui/material";
 import { AddOrder } from "./pages/add-order/AddOrder";
-import { Categoria, GastoDia, GastoMes, LucroDia, LucroMes, Produto, VendaDia, VendaMes } from "./utils/Types";
+import { Categoria, GastoDia, GastoMes, LucroDia, LucroMes, Produto, VendaDia, VendaMes } from "./utils/Typesss";
 import { Products } from "./pages/products/Products";
 import { Expenses } from "./pages/expenses/Expenses";
 import { Categories } from "./pages/categories/Categories";
