@@ -9,7 +9,7 @@ import {
   ChartOptions,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
-import { dateTranslate } from "../utils/DateTranslate";
+import { dateTranslate } from "../utils/DateTranslatesss";
 
 
 export const Graphics = () => {
